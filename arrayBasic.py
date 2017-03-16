@@ -28,3 +28,24 @@ print word[3:5]  #print index 3 and 4 only
 print word[:2]
 print word[2:]
 print word[:]
+
+
+
+s = 'audacity'
+
+print 'U' + s[2:]
+
+
+
+
+s = 'any string'
+
+print s[:]
+
+print s + s[0:-1+1]
+
+print s[0:]
+
+print s[:-1]
+
+print s[:3] + s[3:]
