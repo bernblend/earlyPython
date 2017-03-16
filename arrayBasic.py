@@ -15,3 +15,16 @@ print s[0] + s[1],s[0 + 1]
 print s[1],(s + 'ity')[1]  #trick question - NOT same value all the time.
 
 print s[-1],(s + s)[-1]
+
+
+name = 'Hector'
+print name[0:3]
+
+
+word = 'assume'
+
+print word[3]
+print word[3:5]  #print index 3 and 4 only
+print word[:2]
+print word[2:]
+print word[:]
