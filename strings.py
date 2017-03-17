@@ -45,3 +45,27 @@ substring3 = sentence[34:]
 print substring1
 print substring2
 print substring3
+
+
+
+
+
+print "***************************"
+
+# Set noun_replacement and verb_replacement to your own noun and verb strings.
+# Then, concatenate the variables substring1-3, noun_replacement, and
+# verb_replacement and assign the result to the variable new_sentence so that
+# it's in the same order as the variable sentence.
+
+sentence = "A NOUN went on a walk. It can VERB really fast."
+substring1 = sentence[0:2]
+substring2 = sentence[6:30]
+substring3 = sentence[34:]
+
+noun_replacement = "dog" # your noun here
+verb_replacement = "run" # your verb here
+
+new_sentence = substring1 + noun_replacement + substring2 + verb_replacement + substring3
+# your code here
+
+print new_sentence
