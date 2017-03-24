@@ -83,4 +83,26 @@ def some_func():
     print "Hello World!"
 
 some_func()
-some_func()    
+some_func()
+
+
+
+
+
+
+
+# ***********     AVOID GLOBAL VARIABLES      **********************
+# ******************************************************************
+#     Global vs Local Variable
+
+a = 6           #without this 'a', bottom function causes error.
+
+def some_function():
+    a = 5
+    print "Function: " + str(a)
+
+some_function()
+print "Global: " + str(a)       #this 'a' would not run as prior 'a' is
+                                #indented and therefore local NOT global.
+
+# *******************************************************************
