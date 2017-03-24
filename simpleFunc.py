@@ -38,3 +38,37 @@ print add_two_numbers(0, 9)
 #    return number_1 + number_2
 
 #print subtract_two_numbers(4, 3)
+
+
+
+
+
+# *******************************************************************
+# *******************************************************************
+
+
+# Below are some examples:
+
+#This example shows that the function sum returns no value.
+#OUTPUT: None (no value)
+def sum(a, b):
+    a = a + b
+
+print sum(1, 1)
+
+#Here we add print statements to debug the code.
+def sum(a, b):
+    print "enter sum!"
+    print "a is", a
+    a = a + b
+    print "a is", a
+
+print sum(1, 1)
+
+
+#Here we fix the code with a 'return'.
+def sum(a, b):
+    a = a + b
+    return a
+
+print sum(1, 1)
