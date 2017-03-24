@@ -91,7 +91,7 @@ some_func()
 
 
 
-# ***********     AVOID GLOBAL VARIABLES      **********************
+print "***********     AVOID GLOBAL VARIABLES   **********************"
 # ******************************************************************
 #     Global vs Local Variable
 
@@ -106,3 +106,36 @@ print "Global: " + str(a)       #this 'a' would not run as prior 'a' is
                                 #indented and therefore local NOT global.
 
 # *******************************************************************
+
+
+def some_func(var1, var2):
+    print var1
+    print var2
+
+some_func("bern", 2)
+
+
+# SIMILAR
+
+def some_func(var1, var2):
+    print var1
+    print var2
+
+a = "bern"
+b = 2
+some_func(a, b)
+
+
+print "*************************************************************"
+print "Imutable Objects: string, int, float (not containers)"
+print "*************************************************************"
+print "Mutable Objects: Lists, Dictionaries"
+print "*************************************************************"
+
+
+# You can find out what adress variables are pointing to.
+
+b = 5
+
+print "The address the variable is pointing to is: "
+print id(b)
