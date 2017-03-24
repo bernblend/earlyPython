@@ -72,3 +72,15 @@ def sum(a, b):
     return a
 
 print sum(1, 1)
+
+
+
+
+# *******************************************************************
+#    VIDEO EXAMPLES WITH COACH:
+
+def some_func():
+    print "Hello World!"
+
+some_func()
+some_func()    
