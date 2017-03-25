@@ -41,8 +41,6 @@ print add_two_numbers(0, 9)
 
 
 
-
-
 # *******************************************************************
 # *******************************************************************
 
@@ -75,7 +73,6 @@ print sum(1, 1)
 
 
 
-
 # *******************************************************************
 #    VIDEO EXAMPLES WITH COACH:
 
@@ -84,9 +81,6 @@ def some_func():
 
 some_func()
 some_func()
-
-
-
 
 
 
@@ -133,9 +127,50 @@ print "Mutable Objects: Lists, Dictionaries"
 print "*************************************************************"
 
 
-# You can find out what adress variables are pointing to.
 
-b = 5
+# IMUTABLE OBJECT
+
+# A variable points to a value that it holds on python.
+# int is a type of immutable value
+
+a = 5      # b is a variable that points to the value 5.
 
 print "The address the variable is pointing to is: "
-print id(b)
+print id(a)
+
+
+a = 6     # b is now point ing to a new value.
+
+print "The address the variable is pointing to is: "
+print id(a)
+
+a = 5
+
+print "The address the variable is pointing to is: "
+print id(a)
+
+#NOTE: Above, when '5' was changed to '6', the id changed!
+# '5' & '6' are constants, they don't change.
+# That means the pointer that 'a' refers to has to change!
+
+
+
+
+
+print "MUTABLE OBJECT (example: a list):"
+
+a = [1]
+print id(a)
+
+a.append(2)
+a
+print id(a)
+
+#NOTE: The list is still the same list, it's just mutated.
+
+# When we made it a 'list', the ID did NOT change because the 'list'
+# itself changed instead of the pointer.
+
+
+print "********************************************"
+print "********************************************"
