@@ -375,3 +375,17 @@ def some_func(some_value, count):
             # NOTE: Above, count + 1 above, would never end
 
 print some_func(25, 10)
+
+
+print "\n\n"
+print " Aside: "
+print " Where recursion can be used, so can loops. However, recursion"
+print "may be EASIER to set-up. Loops tend to be faster."
+print "Recursion is most useful when you are not sure how many"
+print "calculations you may end up processing."
+print "\n\n\n\n"
+
+
+
+print "CONCLUSION: Functions and procedures are interchangable terms."
+print "main point GLOBAL & LOCAL scopes."
