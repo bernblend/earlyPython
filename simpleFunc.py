@@ -179,7 +179,7 @@ print id(a)
 
 
 print "********************************************"
-print "********************************************"
+print "****  MUTABLE AND IMMUTABLE OBJECTS   **********"
 print "********************************************"
 print "********************************************"
 
@@ -219,3 +219,41 @@ print "The value that comes in the function is changed oustide"
 print "of the function, they are different (think local)."
 print "The local variable in the function is destroyed at the end"
 print "of the function."
+
+
+
+
+print "************************************************************"
+print "****  GETTING THE VALUE OF AN IMMUTABLE WITH 'return'  *****"
+print "************************************************************"
+print "************************************************************"
+
+
+def some_func(some_value):
+    some_value += 1
+    print "Local: " + str(some_value)
+    return some_value, 1, 2
+
+a = 5
+x = some_func(a)
+print "Global: " + str(x)
+
+
+
+
+
+print "************************************************************"
+print "****  'Hi' will never be printed, return closes function   *****"
+print "************************************************************"
+print "************************************************************"
+
+
+def some_func(some_value):
+    some_value += 1
+    print "Local: " + str(some_value)
+    return some_value, 1, 2
+    print "HI"
+
+a = 5
+x = some_func(a)
+print "Global: " + str(x)
