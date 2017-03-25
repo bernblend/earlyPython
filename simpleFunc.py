@@ -274,3 +274,32 @@ def some_func(some_value):
 
 a = 5
 print some_func(a)
+
+
+
+
+
+
+
+print "************************************************************"
+print "****  Possible ways to return 'none'.   *****"
+print "************************************************************"
+print "************************************************************"
+
+
+def some_func(some_value):
+    some_value += 1
+    return
+
+
+a = 5
+print some_func(a)
+
+
+
+
+def some_func(some_value):
+    some_value += 1
+
+a = 5
+print some_func(a)
