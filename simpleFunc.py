@@ -120,15 +120,17 @@ b = 2
 some_func(a, b)
 
 
+
+
 print "*************************************************************"
-print "Imutable Objects: string, int, float (not containers)"
+print "Immutable Objects: string, int, float (not containers)"
 print "*************************************************************"
 print "Mutable Objects: Lists, Dictionaries"
 print "*************************************************************"
 
 
 
-# IMUTABLE OBJECT
+# IMMUTABLE OBJECT
 
 # A variable points to a value that it holds on python.
 # int is a type of immutable value
@@ -172,5 +174,48 @@ print id(a)
 # itself changed instead of the pointer.
 
 
+
+
+
+
 print "********************************************"
 print "********************************************"
+print "********************************************"
+print "********************************************"
+
+print "If we pass in a MUTABLE variable to a function:"
+
+
+def some_func(some_list):
+    some_list.append(1)
+    print "Local: " + str(some_list)
+
+a = [1,2,3]
+some_func(a)
+print "Global: " + str(a)
+
+print "The value that comes in the function is changed oustide"
+print "of the function, they are the same (think Global)."
+print "The local variable in the function is NOT destroyed at the end"
+print "of the function."
+
+
+
+print "********************************************"
+print "********************************************"
+
+print "If we pass in a IMMUTABLE variable to a function:"
+
+
+def some_func(some_list):
+    some_list += 1
+    print "Local: " + str(some_list)
+
+a = 5
+some_func(a)
+print "Global: " + str(a)
+
+print "The value that comes in the function is changed oustide"
+print "of the function, they are different (think local)."
+print "The local variable in the function is destroyed at the end"
+print "of the function."
