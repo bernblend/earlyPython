@@ -224,7 +224,7 @@ print "of the function."
 
 
 print "************************************************************"
-print "****  GETTING THE VALUE OF AN IMMUTABLE WITH 'return'  *****"
+print "****  GETTING THE VALUE OF AN IMMUTABLE WITH 'return'.  *****"
 print "************************************************************"
 print "************************************************************"
 
@@ -243,7 +243,7 @@ print "Global: " + str(x)
 
 
 print "************************************************************"
-print "****  'Hi' will never be printed, return closes function   *****"
+print "****  'Hi' will never be printed, return closes function.   *****"
 print "************************************************************"
 print "************************************************************"
 
@@ -257,3 +257,20 @@ def some_func(some_value):
 a = 5
 x = some_func(a)
 print "Global: " + str(x)
+
+
+
+
+print "************************************************************"
+print "****  Using 'return' to print out directly.   *****"
+print "************************************************************"
+print "************************************************************"
+
+
+def some_func(some_value):
+    some_value += 1
+    return some_value, 1, 2
+
+
+a = 5
+print some_func(a)
