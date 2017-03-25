@@ -261,10 +261,10 @@ print "Global: " + str(x)
 
 
 
-print "************************************************************"
+print "\n\n"
 print "****  Using 'return' to print out directly.   *****"
-print "************************************************************"
-print "************************************************************"
+print "\n"
+
 
 
 def some_func(some_value):
@@ -281,10 +281,9 @@ print some_func(a)
 
 
 
-print "************************************************************"
+print "\n\n"
 print "****  Possible ways to return 'none'.   *****"
-print "************************************************************"
-print "************************************************************"
+print "\n"
 
 
 def some_func(some_value):
@@ -306,12 +305,29 @@ print some_func(a)
 
 
 
-print "**************"
-print "**************"
-print "**************"
+print "\n\n"
 print "************************************************************"
 print " ASIDE: When a function does anything besides input/output"
 print "and alters some mutable values, we call that alteration"
-print "a side effect of the function (may be the whole point someday)."
-print "************************************************************"
-print "************************************************************"
+print "a side effect of the function   (a side effect may be the"
+print "whole point someday)"
+
+
+
+
+
+print "\n\n\n\n\n"
+print " IF STATEMENTS:"
+print "\n"
+print "In python we don't have to specify a type for our parameter."
+print "Here we can return things depending on wether we have an 'int': "
+
+
+def some_func(some_value):
+    if type(some_value) == type(1):
+        return 1
+    else:
+        return "Not an int"
+
+print some_func(25)
+print some_func(25.0)    #NOTE: This one is a 'float', NOT an 'int'.
