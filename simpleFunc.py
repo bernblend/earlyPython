@@ -303,3 +303,15 @@ def some_func(some_value):
 
 a = 5
 print some_func(a)
+
+
+
+print "**************"
+print "**************"
+print "**************"
+print "************************************************************"
+print " ASIDE: When a function does anything besides input/output"
+print "and alters some mutable values, we call that alteration"
+print "a side effect of the function (may be the whole point someday)."
+print "************************************************************"
+print "************************************************************"
