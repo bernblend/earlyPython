@@ -350,3 +350,28 @@ def some_func(some_value):
 
 print some_func(25)
 print some_func(25.0)
+
+
+
+
+
+
+
+print "\n\n"
+print " Recursion: "
+print " 'if' statement has a base case, which is the stopping condition."
+print "python NOT good for recursion, because it takes too much memory"
+print "in python"
+print "\n"
+
+
+def some_func(some_value, count):
+    print some_value
+    if count == 0:      # base case
+        return some_value
+    else:
+        return some_func(some_value + 1, count - 1)
+
+            # NOTE: Above, count + 1 above, would never end
+
+print some_func(25, 10)
