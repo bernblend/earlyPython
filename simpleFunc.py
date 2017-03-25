@@ -321,6 +321,7 @@ print " IF STATEMENTS:"
 print "\n"
 print "In python we don't have to specify a type for our parameter."
 print "Here we can return things depending on wether we have an 'int': "
+print "\n"
 
 
 def some_func(some_value):
@@ -331,3 +332,21 @@ def some_func(some_value):
 
 print some_func(25)
 print some_func(25.0)    #NOTE: This one is a 'float', NOT an 'int'.
+
+
+
+
+print "\n\n"
+print "The 'return' will end a function even in the middle of a loop,"
+print "so you have to put the 'return' outside the for loop:"
+print "\n"
+
+
+def some_func(some_value):
+    some_list = []
+    for e in range(10):
+        some_list.append(some_value)
+    return some_list
+
+print some_func(25)
+print some_func(25.0)
