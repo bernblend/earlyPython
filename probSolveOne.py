@@ -6,6 +6,19 @@
 # the text.
 
 
+# ADDRESS THE PROBLEM:
+# 1. Create a while loop to go through the text character by character.
+# 2. Throw out characters we don't want.
+# 3. Save characters we DO want inside a 'Dictionary',
+#    where the character is the 'key'
+#    and the number is the 'count'.
+# NOTE: We could actually NOT throw out things and actually find out
+#       how many spaces and commas there are in the text.
+# NOTE: The question may arise, "Am I going to have to change upper case
+#      to lower case".
+
+
+
 article = """
 
 Project Gutenberg's A Grammar of the English Tongue, by Samuel Johnson
