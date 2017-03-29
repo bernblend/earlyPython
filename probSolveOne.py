@@ -1,3 +1,8 @@
+# IPND: Problem Solving Session
+# Left off @ 16 minutes.
+# Need to include a better text example.
+
+
 # Problem Solving Session # 1
 
 # Create a distribution table of all the letters in this article.
