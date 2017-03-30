@@ -16,6 +16,17 @@ def biggest(a, b, c):
 
 
 
+
+
+# USING max()
+
+print max(56, 33, 78)
+
+
+
+
+
+
 print biggest(3, 6, 9)
 #>>> 9
 
