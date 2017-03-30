@@ -296,7 +296,6 @@ print some_func(a)
 
 
 
-
 def some_func(some_value):
     some_value += 1
 
@@ -311,7 +310,6 @@ print " ASIDE: When a function does anything besides input/output"
 print "and alters some mutable values, we call that alteration"
 print "a side effect of the function   (a side effect may be the"
 print "whole point someday)"
-
 
 
 
@@ -350,9 +348,6 @@ def some_func(some_value):
 
 print some_func(25)
 print some_func(25.0)
-
-
-
 
 
 
