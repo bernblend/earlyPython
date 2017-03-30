@@ -3,6 +3,11 @@
 # those three numbers.
 
 
+# USING max()
+
+print max(56, 33, 78)
+
+
 
 def biggest(a, b, c):
     if a > b:
@@ -12,18 +17,6 @@ def biggest(a, b, c):
     if c > biggestNum:
         biggestNum = c
     return biggestNum
-
-
-
-
-
-
-# USING max()
-
-print max(56, 33, 78)
-
-
-
 
 
 
